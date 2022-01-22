@@ -1,5 +1,20 @@
 FROM python:3.10.2
-# Last version check: 20 jan 2022. Newer versions may be available.
+# Last version check: 22 jan 2022. 
+# Newer versions may be available, and info is available at https://www.python.org/downloads/
+# Note that Python 2.7 is end of life. End of support was 01 Jan 2020, see https://www.python.org/dev/peps/pep-0373/
+
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y \
+        procps \
+        iputils-ping \
+        net-tools \
+        lsb-release
+# procps: to support command 'ps'
+# iputils-ping: to support command 'ping' (https://linuxconfig.org/ping-command-not-found-on-ubuntu-20-04-focal-fossa-linux) [Manfred, 19sep2021]
+# net-tools: to support command such as 'arp', 'ifconfig', 'netstat', etc. (https://helpmanual.io/packages/apt/net-tools/) [Manfred, 26sep2021]
+# lsb-release: to support commmand 'lsb_release -a' [Manfred, 15jan2022]
+# You can safely remove the packages you don't want. [Manfred, 08oct2021]
 
 # Create non-root user (zero trust principle, least privileged principle)
 RUN groupadd -g 1000 -r dev && \
