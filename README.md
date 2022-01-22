@@ -1,5 +1,5 @@
 # dev-container-python
-Boilerplate, opinionated dev container for Python
+An opinionated dev container for Python and VS Code
 
 ## Prerequisites
 
