@@ -1,5 +1,5 @@
-FROM python:3.10.2
-# Last version check: 22 jan 2022. 
+FROM python:3.12.2
+# Last version check: 27 mar 2024. 
 # Newer versions may be available, and info is available at https://www.python.org/downloads/
 # Note that Python 2.7 is end of life. End of support was 01 Jan 2020, see https://www.python.org/dev/peps/pep-0373/
 

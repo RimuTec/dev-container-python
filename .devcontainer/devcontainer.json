@@ -5,13 +5,17 @@
     ],
     "service": "dev-python",
     "workspaceFolder": "/src",
-    "extensions": [
-       "eamodio.gitlens",
-       "editorconfig.editorconfig",
-       "k--kato.docomment",
-       "shd101wyy.markdown-preview-enhanced",
-       "ms-python.python"
-    ],
+    "customizations": {
+      "vscode": {
+         "extensions": [
+            "eamodio.gitlens",
+            "editorconfig.editorconfig",
+            "k--kato.docomment",
+            "shd101wyy.markdown-preview-enhanced",
+            "ms-python.python"
+         ],
+      }
+    },
     "remoteUser": "dev",
     "shutdownAction": "stopCompose"
  }
