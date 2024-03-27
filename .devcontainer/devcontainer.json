@@ -1,22 +1,25 @@
 {
-    "name": "rimutec-python",
-    "dockerComposeFile": [
-       "docker-compose.yml"
-    ],
-    "service": "dev-python",
-    "workspaceFolder": "/src",
-    "customizations": {
+   "name": "rimutec-python",
+   "dockerComposeFile": [
+      "docker-compose.yml"
+   ],
+   "service": "dev-python",
+   "workspaceFolder": "/src",
+   "customizations": {
       "vscode": {
          "extensions": [
             "eamodio.gitlens",
             "editorconfig.editorconfig",
+            "github.copilot@prerelease",
+            "github.copilot-chat@prerelease",
+            "github.copilot-labs@prerelease",
             "k--kato.docomment",
-            "shd101wyy.markdown-preview-enhanced",
-            "ms-python.python"
-         ],
+            "mhutchie.git-graph",
+            "ms-python.python",
+            "shd101wyy.markdown-preview-enhanced"
+         ]
       }
-    },
-    "remoteUser": "dev",
-    "shutdownAction": "stopCompose"
- }
- 
+   },
+   "remoteUser": "dev",
+   "shutdownAction": "stopCompose"
+}
